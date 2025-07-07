@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygeine of QR Codes Study</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-pattern {
+            background-color: #f3f4f6;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d1d5db' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .qr-example {
+            border: 2px dashed #4b5563;
+            padding: 10px;
+        }
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation - Mobile Responsive -->
+    <nav class="bg-indigo-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Desktop Nav -->
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold">Hygeine of QR Codes Study</a>
+                <!-- Mobile menu button -->
+                <div class="block md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-indigo-200">About</a>
+                    <a href="#education" class="hover:text-indigo-200">Education</a>
+                    <a href="#study" class="hover:text-indigo-200">The Study</a>
+                    <a href="#contact" class="hover:text-indigo-200">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile menu (hidden by default) -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2 space-y-3">
+                <a href="#about" class="block hover:text-indigo-200 py-1">About</a>
+                <a href="#education" class="block hover:text-indigo-200 py-1">Education</a>
+                <a href="#study" class="block hover:text-indigo-200 py-1">The Study</a>
+                <a href="#contact" class="block hover:text-indigo-200 py-1">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Responsive text and spacing -->
+    <header class="hero-pattern py-8 md:py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Understanding QR Code Security</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Researching student scanning behaviors and the influence of QR code design on user interaction</p>
+            <div class="mt-6 md:mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#study" class="bg-indigo-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 text-center">Learn About Our Study</a>
+                <a href="#education" class="bg-white text-indigo-600 border border-indigo-600 px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-center">QR Code Safety</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section - Responsive layout -->
+    <section id="about" class="py-10 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">About the Research</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Why Study QR Codes?</h3>
+                    <p class="text-gray-600 mb-4">QR codes have become ubiquitous in our daily lives, appearing on products, advertisements, restaurant menus, and more. However, this widespread adoption has also created new security vulnerabilities that many users are unaware of.</p>
+                    <p class="text-gray-600 mb-4">My research aims to understand how students interact with QR codes, their awareness of security risks, and whether certain design elements influence scanning behavior.</p>
+                    <p class="text-gray-600">This study is part of a broader initiative to improve digital literacy and security awareness among university students.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="bg-gray-100 rounded-lg p-6 md:p-8 shadow-md">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-700 mb-4">Research Questions</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>How frequently do students scan the QR codes that I generate and distribute?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>Are students aware of the potential security risks associated with scanning QR codes?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>Do certain QR code designs (colours, logos, borders) influence scanning behavior?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section - Responsive grid -->
+    <section id="education" class="py-10 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">QR Code Security Education</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">What Are QR Codes?</h3>
+                    <p class="text-gray-600 mb-4">QR (Quick Response) codes are two-dimensional barcodes that can store various types of data, such as website URLs, contact information, or plain text. When scanned with a smartphone camera, they quickly connect users to digital content.</p>
+                    <p class="text-gray-600">Originally developed for tracking automotive parts in Japan, QR codes have evolved to become a common tool for marketing, payments, and information sharing.</p>
+                    <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank"> Find Out More Here</a>
+                    <div class="mt-6 qr-example flex justify-center">
+                        <div class="text-center">
+                            <div class="bg-gray-200 w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-2 flex items-center justify-center">
+                                <svg class="w-20 h-20 sm:w-24 sm:h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Simplified QR code SVG -->
+                                    <rect x="10" y="10" width="80" height="80" fill="white"/>
+                                    <rect x="20" y="20" width="20" height="20" fill="black"/>
+                                    <rect x="60" y="20" width="20" height="20" fill="black"/>
+                                    <rect x="20" y="60" width="20" height="20" fill="black"/>
+                                    <rect x="50" y="50" width="10" height="10" fill="black"/>
+                                    <rect x="70" y="50" width="10" height="10" fill="black"/>
+                                    <rect x="50" y="70" width="10" height="10" fill="black"/>
+                                    <rect x="70" y="70" width="10" height="10" fill="black"/>
+                                </svg>
+                            </div>
+                            <p class="text-sm text-gray-500">Basic QR Code</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Common Security Risks</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <div>
+                                <strong class="text-gray-700">Phishing Attempts:</strong> QR codes can lead to fake websites designed to steal personal information or login credentials.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <div>
+                                <strong class="text-gray-700">Malware Distribution:</strong> Scanning a malicious QR code can trigger automatic downloads of malware or redirect to malicious app stores.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <div>
+                                <strong class="text-gray-700">Payment Fraud:</strong> Scammers can replace legitimate payment QR codes with their own to redirect funds.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <div>
+                                <strong class="text-gray-700">Automatic Actions:</strong> QR codes can trigger automatic actions like sending pre-composed emails or text messages.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4 md:mb-6">Safety Tips for Scanning QR Codes</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Verify the Source</h4>
+                        <p class="text-gray-600">Only scan QR codes from trusted sources. Be particularly cautious of codes in public places that could have been tampered with.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Preview URLs</h4>
+                        <p class="text-gray-600">Use a QR scanner app that shows the URL before opening it. Check that the URL matches what you expect before proceeding.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Keep Software Updated</h4>
+                        <p class="text-gray-600">Ensure your phone's operating system and apps are up to date to protect against known vulnerabilities.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Check for Tampering</h4>
+                        <p class="text-gray-600">Look for signs that a QR code might have been altered or had a sticker placed over it, especially in public places.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Be Wary of Shortened URLs</h4>
+                        <p class="text-gray-600">QR codes that lead to shortened URLs can hide their true destination. Use URL preview features to see where they lead.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Don't Share Personal Info</h4>
+                        <p class="text-gray-600">Be cautious about entering personal information on websites accessed via QR codes, especially financial details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Section - Responsive spacing and grid -->
+    <section id="study" class="py-10 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">QR Code Study</h2>
+            
+            <div class="bg-indigo-50 rounded-lg p-6 md:p-8 mb-8 md:mb-12 shadow-md">
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Study Overview</h3>
+                <p class="text-gray-600 mb-4">My research examines how different QR code designs and locations influence scanning behavior among university students. I'm investigating whether factors like verified logos, different text, and surrounding context affect users' likelihood to scan a code.</p>
+                <p class="text-gray-600 mb-4">Through this study, I aim to understand both the factors that drive QR code interaction and identify potential security awareness gaps among the student population.</p>
+                <p class="text-gray-600">The findings will contribute to improved security education and inform the development of a safer QR code scanning app.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Methodology</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-indigo-100 text-indigo-800 font-semibold text-sm mr-3">1</span>
+                            <span>Campus-wide placement of various QR code designs in controlled locations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-indigo-100 text-indigo-800 font-semibold text-sm mr-3">2</span>
+                            <span>Anonymous tracking of scan rates and basic interaction patterns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-indigo-100 text-indigo-800 font-semibold text-sm mr-3">3</span>
+                            <span>Data analysis to identify correlations between design elements, code placement and scan rates</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">QR Code Variables Being Tested</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded">
+                            <h4 class="font-semibold text-gray-700 mb-2">Colour Variations</h4>
+                            <div class="flex space-x-2 mb-2">
+                                <div class="w-8 h-8 bg-black rounded"></div>
+                                <div class="w-8 h-8 bg-blue-600 rounded"></div>
+                                <div class="w-8 h-8 bg-red-600 rounded"></div>
+                                <div class="w-8 h-8 bg-green-600 rounded"></div>
+                            </div>
+                            <p class="text-sm text-gray-600">Testing if coloured QR code posters affect scan rates</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded">
+                            <h4 class="font-semibold text-gray-700 mb-2">Trusted Logos</h4>
+                            <div class="flex justify-center mb-2">
+                                <div class="w-16 h-16 bg-gray-300 flex items-center justify-center text-sm">
+                                    <img src="otago-logo.jpeg" alt="University of Otago Logo" class="w-16 h-16 mx-auto mb-2">
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-600">Testing if university branding increases trust</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded">
+                            <h4 class="font-semibold text-gray-700 mb-2">Differences in Text</h4>
+                            <div class="text-center mb-2">
+                                <p class="text-xs font-bold bg-yellow-100 inline-block px-2 py-1 rounded mb-1">DO NOT SCAN</p>
+                                <p class="text-xs font-bold bg-yellow-100 inline-block px-2 py-1 rounded">Get info, scan here!</p>
+                            </div>
+                            <p class="text-sm text-gray-600">Testing if warning text deters scanning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Responsive layout -->
+    <section id="contact" class="py-10 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">Contact the Researcher</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6 md:p-8">
+                <div class="mb-6 md:mb-8">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Get in Touch</h3>
+                    <p class="text-gray-600">If you have questions about my research, would like to collaborate, or need more information about QR code security, please reach out to me.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <div>
+                        <h4 class="font-semibold text-gray-700 mb-3">Contact Information</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+                                <span class="break-all">claan757@student.otago.ac.nz</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div>
+                                    <p>School of Computing</p>
+                                    <p>Room 230, Owheo Building</p>
+                                    <p>University of Otago, Dunedin Campus</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-700 mb-3">Research Schedule</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                <span>Data collection: June - August 2025</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                <span>Findings published: October 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Hygeine of QR Codes Study | University of Otago</p>
+            <p class="text-gray-400 mt-2 text-sm">This website is part of a research project studying QR code security awareness.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // Handle responsive resizing
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) { // md breakpoint
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
