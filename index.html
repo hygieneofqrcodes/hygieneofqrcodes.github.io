@@ -59,7 +59,8 @@
     <header class="hero-pattern py-8 md:py-16">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Understanding QR Code Security</h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Researching student scanning behaviors and the influence of QR code design on user interaction</p>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">By scanning the QR code, standard web server logs have been stored, due to the anonymous nature of these logs withdrawal of this information will not be possible.</p>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">By voluntarily scanning the QR code you have agreed to participate in this study. Participation in this study is entirely voluntary and you are free to ask the researchers questions/information at any time.</p>
             <div class="mt-6 md:mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#study" class="bg-indigo-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 text-center">Learn About Our Study</a>
                 <a href="#education" class="bg-white text-indigo-600 border border-indigo-600 px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-center">QR Code Safety</a>
@@ -74,9 +75,9 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
                     <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Why Study QR Codes?</h3>
-                    <p class="text-gray-600 mb-4">QR codes have become ubiquitous in our daily lives, appearing on products, advertisements, restaurant menus, and more. However, this widespread adoption has also created new security vulnerabilities that many users are unaware of.</p>
+                    <p class="text-gray-600 mb-4">QR codes have become incredibly common in our daily lives, appearing on products, advertisements, restaurant menus, and more. However, this widespread adoption has also created new security vulnerabilities that many users are unaware of.</p>
                     <p class="text-gray-600 mb-4">My research aims to understand how students interact with QR codes, their awareness of security risks, and whether certain design elements influence scanning behavior.</p>
-                    <p class="text-gray-600">This study is part of a broader initiative to improve digital literacy and security awareness among university students.</p>
+                    <p class="text-gray-600">This study is part of Andrew Clarkson's COSC480 project.</p>
                 </div>
                 <div class="w-full md:w-1/2">
                     <div class="bg-gray-100 rounded-lg p-6 md:p-8 shadow-md">
@@ -205,7 +206,15 @@
                 <p class="text-gray-600 mb-4">My research examines how different QR code designs and locations influence scanning behavior among university students. I'm investigating whether factors like verified logos, different text, and surrounding context affect users' likelihood to scan a code.</p>
                 <p class="text-gray-600 mb-4">Through this study, I aim to understand both the factors that drive QR code interaction and identify potential security awareness gaps among the student population.</p>
                 <p class="text-gray-600">The findings will contribute to improved security education and inform the development of a safer QR code scanning app.</p>
+                <p class="text-gray-600 mb-4">The web server logs collected appear as follows 121.98.80.143 - - [2025-08-11T22:25:23.075Z] "GET /qr/test1 HTTP/1.0" 302 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"</p>
+                <p class="text-gray-600 mb-4">This data includes IP address, time of scan, the QR code identifier, device type, and what browser was used. All of this data is anonymous and cannot be used to identify anyone.</p>
+                <p class="text-gray-600 mb-4">All data will be stored on a secure server which is protected by private keys, the data will be stored for up to 5 years and will be analysed to determine the scanning rates of people around the University given the time, location and design of each poster.</p>
+                <p class="text-gray-600 mb-4">At the conclusion of the study, the analysis will be included in Andrew Clarkson's COSC480 report, however no raw data will be included in the report.</p>
                 <p class="text-gray-600">Please be aware that in scanning the QR code, standard web server logs have been collected, due to the anonymous nature of this data, the information is unable to be withdrawn.</p>
+                <p class="text-gray-600 mb-4">The study will begin on (date of approval) and will conclude approximately (4 weeks later, dependant on time). At time of conclusion this website will be removed.</p>
+                <p class="text-gray-600 mb-4">There are no incentives offered for this study, however we greatly appreciate your participation.</p>
+                <p class="text-gray-600 mb-4">This study has been approved by the School of Computing.  If you have any concerns about the ethical conduct of the research, you may contact the University of Otago Human Ethics Committee through the Human Ethics Committee Administrator (ph +64-3-479-8256 or humanethics@otago.ac.nz).  Any issues you raise will be treated in confidence and investigated and you will be informed of the outcome.</p>
+                <p class="text-gray-600 mb-4">Ethics application number: 25/0808; Approved: 20/08/2025</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
@@ -285,9 +294,33 @@
                             <li class="flex items-start">
                                 <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 <div>
-                                    <p>School of Computing</p>
-                                    <p>Room 230, Owheo Building</p>
-                                    <p>University of Otago, Dunedin Campus</p>
+                                    <p>Andrew Clarkson</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+                                <span class="break-all">steven.mills@otago.ac.nz</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div>
+                                    <p>Steven Mills</p>
+                                    <p>Supervisor</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+                                <span class="break-all">david.eyers@otago.ac.nz</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div>
+                                    <p>David Eyers</p>
+                                    <p>Supervisor</p>
                                 </div>
                             </li>
                         </ul>
@@ -297,7 +330,7 @@
                         <ul class="space-y-2 text-gray-600">
                             <li class="flex items-start">
                                 <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                <span>Data collection: June - August 2025</span>
+                                <span>Data collection: August - September 2025</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
